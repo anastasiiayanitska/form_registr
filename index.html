@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sign__up-form">
+        <div class="input__form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" onKeyUp="if(/[^a-zA-Z .]/.test(this.value)){this.value='';}">
+            <p class="errorName"></p>
+        </div>
+        <div class="input__form">
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" >
+        </div>
+        <div class="input__form">
+            <label for="email">Email:</label>
+            <input type="text" id="email">
+        </div>
+        <div class="input__form">
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+        </div>
+        <p class="error">Fiil form</p>
+        <button class="signup__btn">sign up</button>
+    </div>
+    <div class="sign__in-form">
+        <div class="input__form">
+            <label for="emailLogin">Email:</label>
+            <input type="text" id="emailLogin">
+        </div>
+        <div class="input__form">
+            <label for="passwordLogin">Password:</label>
+            <input type="text" id="passwordLogin">
+        </div>
+        <button class="signin__btn">sign in</button>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
